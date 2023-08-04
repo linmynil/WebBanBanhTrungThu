@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Phản hồi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="Body">
+
+
+        <div id="menu">
+            <ul>
+                <li><a href="home.html"><b>TRANG CHỦ</b></a></li>
+                <li><a href="introduce.html"><b>GIỚI THIỆU</b></a></li>
+                <li><a href="product.html"><b>SẢN PHẨM</b></a> </li>
+                <li><a href="discount.html"><b>GIẢM GIÁ</b></a> </li>
+                <li><a href="feedback.html"><b>PHẢN HỒI</b></a> </li>
+            </ul>
+        </div>
+
+
+        <div class="feedback">
+            <div align="center" class="feed1">QUÝ KHÁCH CÓ HÀI LÒNG VỚI CỬA HÀNG CỦA CHÚNG TÔI KHÔNG?</div>
+            <div class="feedback1">
+                <div class="box">
+                </div>
+                <div id="bye">
+                    Hãy để lại những cảm nhận đáng yêu của quý khách tại đây về sản phẩm của chúng tôi
+                    <br>
+                    <canvas id="myCanvas" width="220" height="100"></canvas>
+
+                </div>
+                <div class="fb-comments" data-href="http://127.0.0.1:5500/feedback.html" data-width=""
+                    data-numposts="100">
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="map">
+            <div align="center" class="feed2">Địa chỉ của chúng tôi</div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4693.616177235483!2d106.62514121663028!3d10.85331185341128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2sQuang%20Trung%20Software%20City!5e0!3m2!1sen!2s!4v1658394901711!5m2!1sen!2s" width="1520" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <!-- Phần footer -->
+        <footer>
+            <div class="col1">
+                <a href="home.html" class="logo"><img class="imglogo"
+                        src="photos/LOGOLM0199-Chibi-Siêu-đầu-bếp-nhí-Cute.jpg" /></a>
+                <h1>LM</h1>
+            </div>
+            <div class="col2">
+                <p>Theo dõi chúng tôi tại</p>
+                <div class="icon"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-youtube"></i></div>
+                <p>Liên hệ với chúng tôi qua gmail</p>
+                <p class="gmail">Linmyhuynh@gmail.com</p>
+            </div>
+            <div class="col3" id="sologan1">
+
+                <marquee>
+                    <p>
+                        🌸Cảm ơn đã ghé thăm cửa hàng của chúng tôi🌸
+                    </p>
+                </marquee>
+
+            </div>
+        </footer>
+        <!-- Kết thúc footer -->
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- Javascript của phần canvas -->
+<script>
+    function draw_arrow(context, startX, startY, size) {
+        var arrowX = startX + 0.75 * size;
+        var arrowTopY = startY - 0.707 * (0.25 * size);
+        var arrowBottomY = startY + 0.707 * (0.25 * size);
+        context.moveTo(startX, startY);
+        context.lineTo(startX + size, startX);
+        context.lineTo(arrowX, arrowTopY);
+        context.moveTo(startX + size, startX);
+        context.lineTo(arrowX, arrowBottomY);
+        context.stroke();
+
+    }
+    window.onload = function () {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        var startX = 50;
+        var startY = 50;
+        var size = 150;
+        context.lineWidth = 5;
+        draw_arrow(context, startX, startY, size);
+    };
+</script>
+
+<!-- Javascript của phần comment facebook   -->
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=1182039752332801&autoLogAppEvents=1"
+    nonce="fJUTWYo5"></script>

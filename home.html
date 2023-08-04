@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trang chủ</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="Body">
+        <!-- Phần menu -->
+        <div id="menu">
+            <ul>
+                <li><a href="home.html"><b>TRANG CHỦ</b></a></li>
+                <li><a href="introduce.html"><b>GIỚI THIỆU</b></a></li>
+                <li><a href="product.html"><b>SẢN PHẨM</b></a> </li>
+                <li><a href="discount.html"><b>GIẢM GIÁ</b></a> </li>
+                <li><a href="feedback.html"><b>PHẢN HỒI</b></a> </li>
+            </ul>
+        </div>
+        <!-- Kết thúc phần menu -->
+
+        <!-- Phần header -->
+        <div id="header">
+            <div id="logolinmy"></div>
+            <div id="title">
+                <h1 id="name">Bánh Trung thu Linmy</h1>
+                <div id="sologan">
+                    <marquee>
+                        <p>
+                            🌸Thưởng thức bánh ngon cùng cửa hàng Linmy 🌸
+                        </p>
+                    </marquee>
+                </div>
+            </div>
+
+            <div id="search">
+                <input type="text" class="searchbar" placeholder="Tìm kiếm">
+            </div>
+
+            <div class="sign">
+                <div id="img"></div>
+                <div id="click"><a href="sign.html">Đăng nhập</a></div>
+            </div>
+
+        </div>
+        <!-- kết thúc phần header -->
+
+
+
+        <!-- Phần banner -->
+        <div id="banner"></div>
+        <!--Kết thúc phần banner  -->
+
+
+        <!-- Phần content -->
+        <div id="content">
+            <div id="text"><b>SẢN PHẨM NỔI BẬT</b></div>
+            <!--Kết thúc phần tiêu đề -->
+
+            <div class="center">
+                <!-- code cho một sản phẩm -->
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/bánh trung thu dẻo.jpg" /></a>
+                    <p>Bánh trung thu dẻo</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+
+
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/Bánh pía.webp" /></a>
+                    <p>Bánh Pía</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/bánh trung nhân hạt sen.jpg" /></a>
+                    <p>Bánh trung thu nhân hạt sen</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/bánh trung thu nhân thập cẩm.jpg" /></a>
+                    <p>Bánh trung thu nhân thập cẩm</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+            </div>
+            <!-- Kết thúc hàng sản phẩm 1 -->
+            <div class="center">
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/bánh trung thu nhân trứng muối.webp" /></a>
+                    <p>Bánh trung thu nhân trứng muối</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/bánh trung thu nhân sầu riêng.jpg" /></a>
+                    <p>Bánh trung thu nhân sầu riêng</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/bánh trung thu nhân trà xanh.webp" /></a>
+                    <p>Bánh trung thu nhân trà xanh</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+                <div class="row">
+                    <a href="product.html"><img class="imglogo" src="photos/bánh trung thu nhân đậu xanh.jpg" /></a>
+                    <p>Bánh trung thu nhân đậu xanh</p>
+                    <p id="price">Giá:90.000/ 1 hộp</p>
+                </div>
+            </div>
+            <!-- Kết thúc hàng sản phẩm 2 -->
+        </div>
+        <!--Kết thúc content-->
+
+        <!-- Phần slide -->
+        <div class="hot">
+            <div class="slide1">
+                SẢN PHẨM
+            </div>
+            <div id="slide">
+                <img id="hinh" src="photos/bánh trung thu nhân trứng muối.webp">
+                <div class="dieuhuong">
+                    <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+                    <i class="fa fa-chevron-circle-right" onclick="next()"></i>
+                </div>
+                <span id="cake"></span>
+            </div>
+            <div class="slide1">
+                BÁN CHẠY
+            </div>
+        </div>
+        <!-- kết thúc slide -->
+    
+        <!-- JAVASCRIPT  -->
+        <script>
+
+            var arr_hinh = [
+                "photos/bánh trung thu nhân trứng muối.webp",
+                "photos/bánh trung thu nhân sầu riêng.jpg",
+                "photos/Bánh pía nhân khoai môn.jpg",
+                "photos/bánh trung thu nhân đậu xanh.jpg",
+            ]
+            var arr_mota = [
+                "Bánh trung thu nhân trứng muối",
+                "Bánh trung thu nhân sầu riêng",
+                "Bánh pía nhân khoai môn",
+                "Bánh trung thu nhân đậu xanh",
+            ]
+            var index = 0;
+            function next() {
+                index++;
+                if (index >= arr_hinh.length) index = 0;
+
+                var hinh = document.getElementById("hinh");
+                hinh.src = arr_hinh[index];
+                document.getElementById("cake").innerHTML = arr_mota[index];
+            }
+            function prev() {
+                index--;
+                if (index < 0) index = arr_hinh.length - 1;
+
+                var hinh = document.getElementById("hinh");
+                hinh.src = arr_hinh[index];
+                document.getElementById("cake").innerHTML = arr_mota[index];
+            }
+            setInterval("next()", 3000);
+        </script>
+
+
+        <!-- Phần video -->
+        <div>
+            <iframe class="video" src="https://www.youtube.com/embed/6VkPBUdkSAE" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <!-- Kết thúc video -->
+
+        <!-- Phần footer -->
+        <footer>
+            <div class="col1">
+                <a href="home.html" class="logo"><img class="imglogo"
+                        src="photos/LOGOLM0199-Chibi-Siêu-đầu-bếp-nhí-Cute.jpg" /></a>
+                <h1>LM</h1>
+            </div>
+            <div class="col2">
+                <p>Theo dõi chúng tôi tại</p>
+                <div class="icon"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-youtube"></i></div>
+                <p>Liên hệ với chúng tôi qua gmail</p>
+                <p class="gmail">Linmyhuynh@gmail.com</p>
+            </div>
+            <div class="col3" id="sologan1">
+
+                <marquee>
+                    <p>
+                        🌸Cảm ơn đã ghé thăm cửa hàng của chúng tôi🌸
+                    </p>
+                </marquee>
+
+            </div>
+        </footer>
+        <!-- Kết thúc footer -->
+    </div>
+
+
+</body>
+
+</html>

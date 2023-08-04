@@ -1,0 +1,700 @@
+
+*{margin:0;padding: 0;box-sizing: border-box}
+body{
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+}
+.Body{
+   margin: 0 auto; 
+   width: 100%;
+}
+
+
+/* Trang chủ */
+/* Phần header */
+#header{
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    background-color: white;
+    
+}
+ #logolinmy{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-image: url(photos/LOGOLM0199-Chibi-Siêu-đầu-bếp-nhí-Cute.jpg);
+    background-size: 100% 100%
+    
+ }
+ 
+ #title{
+    width: 700px;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 1px 1px 5px rgb(245, 143, 143);
+ }
+
+ #name{
+    color:#E40398;
+    font-size: 70px;
+    text-shadow: 1px 1px 5px rgb(12, 0, 0);
+   
+}
+
+ #sologan{
+    width: 700px
+     
+ }
+ #sologan p{
+     line-height: 40px;
+     font-size: 30px;
+     color:#E40398;
+     font-weight: bold;
+     text-shadow: 1px 1px 1px rgb(12, 0, 0);
+     
+ }
+ #search{
+    margin: auto;
+ }
+ .searchbar{
+    width: 370px;
+    height: 40px;
+    border-style: 5px double;
+    border-radius: 20px;
+    font-size: 22px;
+    background-image: url(photos/images.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFBDF8;
+    background-position: right;
+    font-size: 15px; 
+    color:black;
+    font-weight: bold;
+    padding-left: 10px;
+
+ }
+ 
+ 
+ .sign{
+    margin: auto;
+ }
+ #img{
+    width: 50px;
+    height: 50px; 
+    border-style:solid;
+    background-image: url(photos/images\ \(1\).png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 95px;
+    margin: auto;
+    margin-bottom: 5px;
+ }
+ #click{
+    width: 150px;
+    height: 35px;
+    background-color:blue;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    border-style:solid;
+    border-color: black;
+
+ }
+ #click a{
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    
+ }
+ #click:hover{
+    background-color: red;
+    border-style:solid;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+   
+ }
+
+/* Phần menu */
+#menu{
+    width: 100%;
+    display: flex;
+    background-color: purple;
+    background-image: linear-gradient(pink,purple);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+ #menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 100px;
+  
+}
+#menu ul{
+   /* margin-left: 180px; */
+   
+}
+#menu ul li a{
+    /* text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    line-height: 50px; */
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+#menu ul li a:hover{
+    /* background-color: rgb(147, 255, 137);
+    border-radius: 15px;
+    color: #000;
+    text-decoration:none;
+    height: 45px; */
+    color: aquamarine;
+    border-bottom: .1rem soild var(--main-color);
+    padding-bottom: .5rem;
+}
+
+/* Phần banner */
+#banner{
+    height: 500px;
+    width: 100%;
+    background-image: url(photos/banner1.jpg);
+    background-size: cover;
+}
+
+/* Phần content */
+#content{
+    height: 900px;
+    width: 100%;
+    background-color:white;
+}
+.center{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #EDDAFD;
+   
+}
+
+.row{
+    margin: 20px;
+    height: 380px;
+    width: 300px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.row img{
+    border-radius: 20px;
+    height: 250px;
+    width: 260px;
+    box-shadow: 15px 7px 10px rgb(12, 12, 12);
+}
+
+.row img:hover{
+    transition: 1s ease-in-out;
+    transform: scaleX(1.1);
+
+}
+.row p{
+   width: 230px;
+   margin-left: 20px;
+   font-size: 25px;
+   color: rgb(9, 0, 4);
+   text-shadow: 1px 1px #fb7373;
+   margin-top: 10px;
+}
+#price{
+    color: rgb(255, 3, 24);
+    font-size: 20px;
+    font-weight: bold;
+}
+#text{
+    margin: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(254, 4, 192);
+    text-shadow: 1px 1px 2px rgb(11, 0, 0);
+}
+
+
+/* slide */
+
+.hot{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: rgb(250, 85, 99);
+    background-image: linear-gradient( rgb(250, 85, 99),rgb(249, 153, 249));
+}
+.slide1{
+    margin: 70px;
+    font-size: 80px;
+    text-align: center;
+    color: #6ed0f7;
+    text-shadow: 1px 1px 2px black;
+}
+#slide{
+width: 600px;
+height: 400px;
+margin: 0 auto;
+position: relative;
+background-color: rgb(250, 85, 99);
+background-image: linear-gradient( rgb(250, 85, 99),rgb(249, 153, 249));
+}
+#slide img{
+width: 100%;
+height: 100%;
+}
+#slide i:first-child{
+position: absolute;
+top:50%;
+left: 30px;
+font-size: 40px;
+color: aquamarine;
+}
+#slide i:last-child{
+position: absolute;
+color: aquamarine;
+top: 50%;
+right: 30px;
+font-size: 40px;
+}
+#slide #cake{
+    position: absolute;
+    top:80%;
+    left: 20%;
+    font-size: 25px;
+    color: white;
+    opacity: 0.8;
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+
+
+/* Phần video */
+.video{
+    width: 100%;
+    height: 500px;
+}
+
+/* Phần footer */
+footer{
+    background-color: purple;
+    background-image: linear-gradient(purple,pink);
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr ;
+    height: 250px;
+    text-align: center;
+    width: fit-content;
+}
+
+.imglogo{
+    height: 70px;
+    width: 70px;
+}
+.col1{
+    text-align: center;
+    margin-top: 50px;
+    font-size:20px;
+}
+.col2{
+    text-align: left;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.col2 p {
+    margin: 10px;
+}
+.col3{
+    text-align:right ;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color:aquamarine;
+    text-shadow: 1px 1px 2px rgb(11, 0, 0);
+}
+
+#sologan1{
+    width: 900px;
+    margin-top: 90px;
+ }
+
+ .icon{
+    margin-left: 10px;
+
+ }
+ .icon i{
+    margin-right: 10px;
+ }
+
+
+/* Kết thúc trang chủ */
+
+
+/* Trang giới thiệu */
+#content1{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 750px;
+
+}
+#left{
+    width: 30%;
+    height: max-content;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+#right{
+    width: 70%;
+    height: min-content;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#logo{
+    width: 200px;
+    height: 200px;
+    background-image: url(photos/LOGOLM0199-Chibi-Siêu-đầu-bếp-nhí-Cute.jpg);
+    background-size: 100% 100%
+}
+
+#store{
+    color: red;
+    font-size: 70px;
+    text-shadow: 0px 5px 5px black;
+}
+#passge{
+    text-align: left;
+    font-size: 40px;
+    color: cornflowerblue;
+    padding: 30px;
+    text-shadow: 1px 1px 2px rgb(11, 0, 0);
+}
+#passge1{
+    text-align: left;
+    font-size: 35px;    
+}
+.title{
+font-size: 50px;
+text-align: center;
+margin-bottom: 20px;
+margin-top: 40px;
+color:brown;
+font-weight: 100;
+}
+
+
+/* Trang sản phẩm */
+
+#content2{
+    margin-top:80px;
+    height: 2600px;
+    width: 100%;
+    background-color:white;
+}
+.center2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+}
+
+#text2{
+    margin: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 94, 105);
+    text-shadow: 1px 1px 2px rgb(11, 0, 0);
+}
+
+.row1{padding-left: 20px;
+    margin: 30px;
+    height: 430px;
+    width: 280px;
+    padding-bottom: 120px;
+}
+
+.row1 img{
+    border-radius: 20px;
+    height: 250px;
+    width: 260px;
+    box-shadow: 15px 7px 10px rgb(12, 12, 12);
+}
+
+.row1 img:hover{
+    transition: 1s ease-in-out;
+    transform: scaleX(1.1);
+
+}
+.row1 p{
+   width: 230px;
+   margin-left: 20px;
+   font-size: 25px;
+   color: rgb(9, 0, 4);
+   text-shadow: 1px 1px #fb7373;
+   margin-top: 10px;
+}
+#price{
+    color: rgb(255, 3, 24);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(11, 0, 0);
+}
+
+.row1 input{
+    width: 50px;
+    height: 50px;
+    background-image: url(photos/sticker-png-shopping-cart-market-technology-business-research-inc-go-to-market-sales-line-vehicle.png);
+    background-size: cover;
+    border: none;
+    margin-top: 30px;
+    margin-left: 100px;
+
+}
+.row1 input:hover{
+    background-image: url(photos/download.png);
+    background-size: cover;
+}
+
+#cart{
+    margin-top: 60px;
+}
+
+
+#cart1{
+    margin-top: 5px;
+}
+
+/* Trang giảm giá */
+#content3{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 1200px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.title1{
+    font-size: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    color:rgb(14, 160, 26);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(11, 0, 0);
+    }
+ .title2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(247, 7, 19);
+    font-weight:bold;
+    text-shadow: 1px 1px 2px rgb(11, 0, 0);
+    }
+  #right1{
+    margin-top: 30px;
+    height: 900px;
+    width: auto;
+  }
+  .aside{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #img1 img{
+    height: 150px;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+
+  #img1 img:hover{
+    transform: scaleX(1.1);
+  }
+  .video1 p {
+    height: 80px;
+    margin-bottom: 75px;
+   
+  }
+  .video1 a{
+    text-decoration:none;
+   
+  }
+
+  .video1 a:hover{
+    text-decoration:none;
+    color: #fb7373;
+  }
+  
+
+  /* Trang đăng kí */
+  #content5{
+    margin-top: 50px;
+    height: 660px;
+    background-color: #f8b7f6;
+    padding-top: 70px;
+  }
+  .form2{
+   
+    width: 450px;
+    height: 500px;
+    background-color: rgb(252, 87, 167);
+    margin-bottom: 70px;
+    border-radius: 15px;
+}
+.form2 h2{
+    color: rgb(0, 0, 6);
+    padding-top: 70px;
+
+}
+.inputjoin{
+    width: 400px;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.form-button{
+        width: 120px;
+        height: 35px;
+        background-color: rgb(8, 8, 249);
+        color:white;
+        border-radius: 5px;
+}
+.form-button:hover{
+    background-color: rgb(218, 73, 47);
+}
+
+
+/* Trang đăng nhập */
+#content6{
+    margin-top: 50px;
+    height: 580px;
+    background-color: #f8b7f6;
+    padding-top: 70px;
+  }
+.form1{
+    width: 500px;
+    height: 420px;
+    background-color: rgb(155, 195, 241);
+    border-radius: 25px;  
+}
+.form1 h2{
+    color: rgb(0, 0, 6);
+    padding-top: 70px;
+}
+.inputsign{
+    width: 400px;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+/* Trang phản hồi */
+.feedback{
+    margin-top: 50px;
+    height: 500px;
+    background-color: rgb(111, 229, 253);
+    background-image: linear-gradient(pink, rgb(111, 229, 253));
+}
+.feedback1{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+   
+}
+#map{
+    background-color: rgb(111, 229, 253);
+    width: 100%;
+    height:350px;
+    margin-bottom: 50px;
+}
+
+.fb-comments{
+  padding-top: 30px;
+  padding-left: 80px;
+  height: auto;
+}
+.feed1{
+    padding-top: 30px;
+    font-size: 40px;
+    color: rgb(250, 6, 189);
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+}
+.feed2{
+    font-size: 40px;
+    color: rgb(250, 6, 189);
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.box{
+    width: 320px; height: 300px;
+    background-image: url(photos/chào1.gif); background-size: cover;
+    position: relative;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    left: 50px; top: 30px
+
+}
+
+@keyframes move{
+    0% {background-image: url(photos/chào1.gif); background-size: cover; left: 50px; top: 30px }
+    25% {background-image: url(photos/chào2.gif); background-size: cover; left: 200px; top: 30px }
+    50% {background-image: url(photos/chào2.gif);background-size: cover;left: 200px; top: 150px }
+    75% {background-image: url(photos/chào2.gif); background-size: cover; left: 50px; top: 150px }
+    100% {background-image: url(photos/chào1.gif); background-size: cover;left: 50px; top: 30px }
+}
+
+#bye{
+ text-align:justify ;
+ padding-top: 50px;
+ font-size: 35px;
+ color: rgb(252, 112, 112);
+ font-weight: bold;
+ text-shadow: 1px 1px 2px #000e0c;
+
+}
+
+#myCanvas {
+    margin-top: 10px;
+    position: relative;
+    animation-name: move1;
+    animation-duration: 6s;
+    animation-delay: 3s;
+  }
+  @keyframes move1{
+    0% { left: 50px; top: 0px }
+    25% { left: 100px; top: 0px }
+   
+}
+
+
+
+
+
+
+
+
+
+    
+   
+    
+    
+   
+
+  
+    

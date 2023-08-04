@@ -1,0 +1,96 @@
+
+@media (max-width:991px) {
+    .menu{
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menu{
+        margin-top: 2rem;
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
+        background: whitesmoke;
+        top: -100%;
+        left: -100%;
+       
+    }  
+     #menu ul li{
+       width: auto;
+       padding-left: 5rem;
+    }
+    #menu ul{
+        width: auto;
+       margin-left: 12rem;
+    }
+    #menu ul li a{
+        color: black;
+        display: block;
+       margin: 1.5rem;
+       padding: .5rem;
+       font-size: 2rem;
+    }
+}
+
+/* ẩn header */
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (max-width: 740px) {
+   
+}
+
+/* Menu mobile */
+
+@media only screen and (max-height: 414px) {
+   
+
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+/* Table width>=740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    #menu ul li{
+        list-style: none;
+        display: inline-block;
+        padding-left: 60px;
+      
+    }
+    #menu ul{
+       margin-left: 80px;
+       
+    }
+}
+
+/* Pc width >= 1024px */
+@media only screen and (min-width: 1024px) {
+ 
+}
+
+@media only screen and (max-width: 1024px) {
+  
+   
+}
+
+/* Responsive for userpage */
+@media only screen and (max-width: 1023px) {
+
+    
+
+}
+
+/* userpage for tablet */
+@media only screen and (max-width: 1023px) and (min-width: 414px) {
+    
+}
+
+/* subcribe container */
+
+@media only screen and (max-width: 688px) {
+   
+}
